@@ -12,16 +12,31 @@ import csv
 
 #open the file
 
+outfile = open('employee_data.csv', 'w')
 
 
 
 #create an empty dictionary
+newdict = {}
 
 
 #use a loop to iterate through the csv file
 
+FirstName = outfile['First Name']
+LastName = outfile['Last Name']
+Department = outfile['Department']
+Salary = outfile['Salary']
+
+for i in outfile: 
+    for i in range (0,len(FirstName)):
+
+
 
     #check if the employee fits the search criteria
+        if Department == "Marketing":
+            newdict = {FirstName[i] + LastName[i]: (Salary[i]* 1.1)}
+
+
 
 
     
@@ -32,7 +47,8 @@ print()
 
 #iternate through the dictionary and print out the key and value as per printout
 
-
+for k, v in newdict.items():
+    print(k,v)
 
           
         
