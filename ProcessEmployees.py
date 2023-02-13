@@ -48,7 +48,7 @@ print()
 #iternate through the dictionary and print out the key and value as per printout
 
 for k, v in newdict.items():
-    print(k,v)
+    print('Manager name:' k, "current salary", "$",v)
 
           
         
